@@ -1,0 +1,8 @@
+{
+  "external_access_g": {},
+  "DWH::external_access_g#": {
+    "DWH_1": {
+      "schema": "DWH_1"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "DWH::external_access": {
+    "DWH_1": {
+      "schema": "DWH_1"
+    }
+  }
+}

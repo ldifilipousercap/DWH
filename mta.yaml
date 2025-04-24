@@ -1,0 +1,24 @@
+_schema-version: '2.1'
+ID: DWH
+version: 0.0.1
+modules:
+  - name: db
+    type: hdb
+    path: db
+    requires:
+      - name: hdi_db
+        properties:
+          TARGET_CONTAINER: '~{hdi-container-name}'
+      - name: DWH_USER
+resources:
+  - name: hdi_db
+    type: com.sap.xs.hdi-container
+    parameters:
+      config:
+        schema: DWH
+    properties:
+      hdi-container-name: '${service-name}'
+  - name: DWH_USER
+    type: org.cloudfoundry.existing-service
+    parameters:
+      service-name: remote_system_grant_service

@@ -1,0 +1,20 @@
+{
+  "role": {
+    "name": "DWH::external_access_g#",
+    "schema_privileges": [
+      {
+        "reference": "DWH_1",
+        "privileges": [
+          "SELECT",
+          "SELECT CDS METADATA",
+          "SELECT METADATA"
+        ],
+        "privileges_with_grant_option": [
+          "SELECT",
+          "SELECT METADATA",
+          "SELECT CDS METADATA"
+        ]
+      }
+    ]
+  }
+}
